@@ -13,6 +13,7 @@ const addUser = ({ id, username, room }) => {
         }
     }
 
+    /*
     // Check for existing user
     const existingUser = users.find((user) => {
         return user.room === room && user.username === username
@@ -23,7 +24,7 @@ const addUser = ({ id, username, room }) => {
         return {
             error: 'Username is in use!'
         }
-    }
+    }*/
 
     // Store user
     const user = { id, username, room }
