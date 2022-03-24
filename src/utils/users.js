@@ -1,3 +1,9 @@
+/*
+*Created by Jonathan Williams (jonwilliams7129@gmail.com)
+*Released under the MIT License.
+*Code built following lessons from https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
+*/
+
 const users = []
 
 const addUser = ({ id, username, room }) => {
@@ -12,19 +18,6 @@ const addUser = ({ id, username, room }) => {
             error: 'Username and room are required!'
         }
     }
-
-    /*
-    // Check for existing user
-    const existingUser = users.find((user) => {
-        return user.room === room && user.username === username
-    })
-
-    // Validate username
-    if (existingUser) {
-        return {
-            error: 'Username is in use!'
-        }
-    }*/
 
     // Store user
     const user = { id, username, room }
